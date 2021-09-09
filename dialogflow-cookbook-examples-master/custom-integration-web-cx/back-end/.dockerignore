@@ -1,0 +1,15 @@
+.git
+.ipynb_checkpoints/*
+/notebooks/*
+/unused/*
+Dockerfile
+.DS_Store
+.gitignore
+README.md
+env.*
+/devops/*
+*.csv
+/tmp/*
+*/keys/*
+
+!*/build/*

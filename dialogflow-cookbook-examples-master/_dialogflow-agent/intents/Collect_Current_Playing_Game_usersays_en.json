@@ -1,0 +1,122 @@
+[
+  {
+    "id": "f9b5e6ac-a058-4be0-98fb-e49188f291ab",
+    "data": [
+      {
+        "text": "What\u0027s the last game you bought?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c8e0912c-675d-49a1-80f7-817bb0ef7a74",
+    "data": [
+      {
+        "text": "What recent game you purchased?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ede9a0b6-d721-4189-8d45-adc5bac548f1",
+    "data": [
+      {
+        "text": "What\u0027s the most recent game you played?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "07a37c4d-249a-4269-abe2-167e3bba6666",
+    "data": [
+      {
+        "text": "What\u0027s your latest game purchase?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ae3fe9c2-f9ff-42b1-b633-e1b37178714c",
+    "data": [
+      {
+        "text": "Are you playing any video games lately, which ones?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "18b2c70b-1099-4ecc-b116-4f7fcf1a9342",
+    "data": [
+      {
+        "text": "What are you playing right now?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "07bb6ee4-e74c-4952-bee0-32eea9c4e268",
+    "data": [
+      {
+        "text": "Which games are you playing lately?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5a6bc8ac-28ec-47f6-a046-c605c485a182",
+    "data": [
+      {
+        "text": "Do you have any great games lately?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "caf2eb67-7e21-45ee-9266-a26178ca0eb2",
+    "data": [
+      {
+        "text": "Which game are you playing now?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b71b1dd5-4e76-44f0-a895-0e50ced772d5",
+    "data": [
+      {
+        "text": "What videogames are you currently playing?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

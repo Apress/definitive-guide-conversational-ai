@@ -1,0 +1,34 @@
+{
+  "id": "78898eb7-416d-4cef-8933-34a750be76e0",
+  "name": "Collect_Current_Playing_Game",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Oh, on the Nintendo Switch I play Animal Crossing and on the playstation I am currently playing the latest Star Wars game.",
+            "I bought the Death Stranding game recently, but I haven\u0027t started it yet."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

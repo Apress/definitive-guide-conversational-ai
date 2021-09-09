@@ -1,0 +1,26 @@
+[
+  {
+    "id": "4dc2e7ab-5e25-4406-a0b6-9fecccb138e0",
+    "data": [
+      {
+        "text": "When will my order ship?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2bb4ff2e-53d9-42cf-9692-17071c541763",
+    "data": [
+      {
+        "text": "What\u0027s the delivery date of my order?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

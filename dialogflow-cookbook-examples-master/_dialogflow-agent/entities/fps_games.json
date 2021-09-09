@@ -1,0 +1,9 @@
+{
+  "id": "b6cdda24-af5e-44f0-a136-03042e3a06e2",
+  "name": "fps_games",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

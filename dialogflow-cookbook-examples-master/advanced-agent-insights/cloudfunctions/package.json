@@ -1,0 +1,8 @@
+{
+    "name": "chatanalytics",
+    "version": "1.0.2",
+    "dependencies": {
+      "@google-cloud/bigquery": "^5.0.0",
+      "@google-cloud/dlp": "^1.2.0"
+    }
+  }

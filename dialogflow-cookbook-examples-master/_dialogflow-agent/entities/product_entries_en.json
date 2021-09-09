@@ -1,0 +1,32 @@
+[
+  {
+    "value": "@platform:platform @products_edition:products_edition  @products_color:products_color",
+    "synonyms": [
+      "@platform:platform @products_edition:products_edition  @products_color:products_color"
+    ]
+  },
+  {
+    "value": "@platform:platform",
+    "synonyms": [
+      "@platform:platform"
+    ]
+  },
+  {
+    "value": "@platform:platform @products_edition:products_edition",
+    "synonyms": [
+      "@platform:platform @products_edition:products_edition"
+    ]
+  },
+  {
+    "value": "@products_color:products_color @platform:platform",
+    "synonyms": [
+      "@products_color:products_color @platform:platform"
+    ]
+  },
+  {
+    "value": "@products_color:products_color @platform:platform @products_edition:products_edition",
+    "synonyms": [
+      "@products_color:products_color @platform:platform @products_edition:products_edition"
+    ]
+  }
+]

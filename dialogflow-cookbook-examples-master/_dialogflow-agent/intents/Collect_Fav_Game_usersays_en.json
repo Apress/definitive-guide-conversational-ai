@@ -1,0 +1,110 @@
+[
+  {
+    "id": "8ba93f16-bb5c-4634-a811-6b3c58449103",
+    "data": [
+      {
+        "text": "What\u0027s the ideal game?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1282df57-c585-46fd-9a63-4b91a51d6fc1",
+    "data": [
+      {
+        "text": "Is there a game you enjoyed the most?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9f598498-c27f-4153-aa92-086182d1793e",
+    "data": [
+      {
+        "text": "Do you have a favorite?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b8d8a94d-157f-4045-94a8-aae0051f67ef",
+    "data": [
+      {
+        "text": "What video game did you like the most?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f55c52e1-51d9-4143-ba7c-64af6fc5d46e",
+    "data": [
+      {
+        "text": "Which video game is the best?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "533790aa-0408-4f25-a11d-763c9e47c56a",
+    "data": [
+      {
+        "text": "Do you have an all time favourite video game?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "07df94ee-2aba-47c8-a42d-d775bf764ac8",
+    "data": [
+      {
+        "text": "Any favorite games?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c9f9dece-6cc3-4160-8691-d3c2c7d16c9c",
+    "data": [
+      {
+        "text": "What is the best game you have ever played?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "53ea0100-bc3e-4024-a5ed-b57c2f0c2735",
+    "data": [
+      {
+        "text": "What\u0027s your favorite game?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

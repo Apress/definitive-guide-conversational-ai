@@ -1,0 +1,20 @@
+[
+  {
+    "id": "c8963ade-7314-4d80-af2b-af8f760657a5",
+    "data": [
+      {
+        "text": "Buy ",
+        "userDefined": false
+      },
+      {
+        "text": "nintendo12345678",
+        "alias": "producttype",
+        "meta": "@producttype",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

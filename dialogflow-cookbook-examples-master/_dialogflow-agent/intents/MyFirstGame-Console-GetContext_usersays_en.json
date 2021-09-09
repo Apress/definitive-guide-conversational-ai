@@ -1,0 +1,56 @@
+[
+  {
+    "id": "f6f5b607-12e4-4eed-8077-0bdeef2f540b",
+    "data": [
+      {
+        "text": "The ",
+        "userDefined": false
+      },
+      {
+        "text": "first",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " game console I played on is ",
+        "userDefined": false
+      },
+      {
+        "text": "SNES",
+        "alias": "product",
+        "meta": "@product",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "972f8c84-1563-4426-8673-ca115ea9e5ff",
+    "data": [
+      {
+        "text": "My ",
+        "userDefined": false
+      },
+      {
+        "text": "first",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " console was ",
+        "userDefined": false
+      },
+      {
+        "text": "dreamcast",
+        "alias": "product",
+        "meta": "@product",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

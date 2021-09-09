@@ -1,0 +1,23 @@
+{
+  "name": "dialogflow-custom-integration",
+  "version": "1.0.0",
+  "author": "Lee Boonstra",
+  "license": "Apache-2.0",
+  "description": "Custom Web integration with the Dialogflow SDK",
+  "engines": {
+    "node": ">=10.9.0 <13.0.0",
+    "yarn": ">=1.17.3 <=1.19.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dialogflow": "^0.14.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "uuid": "^3.3.3"
+  }
+}

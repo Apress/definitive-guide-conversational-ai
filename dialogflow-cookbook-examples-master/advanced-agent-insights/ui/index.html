@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Custom Web Chat</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="chatbox">
+        <h1 style="font-size: 18px;">Custom Web Chat</h1>
+        <div class="chatarea">
+            <ul id="messages" class="history"></ul>
+        </div>
+
+        <div class="chatfooter">
+            <div class="chatinput">
+                    <input id="queryText" class="chatinput">
+            </div>
+            <button type="submit" id="submit">Send</button>
+        </div>
+    </form>
+
+
+    <script>
+
+    //a) Load socket io
+    const socketio = io();
+    
+    //b) Once socket.io made a connection with a server app,
+    // execute this block
+    const socket = socketio.on('connect', function() {
+        console.log('connected');
+
+        //c) Run this block when the server responds with a fulfillment
+        socketio.on('returnResults', function (data) {
+            console.log(data);
+
+            //d) If there are queryResults then dynamically
+            // create list items to append to the messages list.
+            if(data[0].queryResult){
+                var agent = document.createElement("li");
+                agent.className = 'balloon agent';
+                agent.innerHTML = data[0].queryResult.fulfillmentText;
+                messages.appendChild(agent);  
+            }
+        });
+
+        //welcome
+        socketio.emit('welcome');
+    });
+
+    //e) Create some pointers to other HTML elements
+    const textarea = document.getElementById('textarea');
+    const textInput = document.getElementById('queryText');
+    const submitBtn = document.getElementById('submit');
+    const messages = document.getElementById('messages');
+    
+    //f) On submit of a user utterance,
+    // create list items to append to the messages list.
+    submitBtn.onclick = function(e) {
+        e.preventDefault();
+        socketio.emit('message', textInput.value);
+        var user = document.createElement("li");
+        user.className = 'balloon user';
+        user.innerHTML = textInput.value;
+        messages.appendChild(user);
+        textInput.value = ""; 
+    }
+    </script>
+</body>
+</html>

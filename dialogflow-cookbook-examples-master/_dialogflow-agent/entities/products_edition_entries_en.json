@@ -1,0 +1,22 @@
+[
+  {
+    "value": "pro",
+    "synonyms": [
+      "Pro",
+      "pro",
+      "Pro Edition"
+    ]
+  },
+  {
+    "value": "lite",
+    "synonyms": [
+      "lite"
+    ]
+  },
+  {
+    "value": "X",
+    "synonyms": [
+      "X"
+    ]
+  }
+]

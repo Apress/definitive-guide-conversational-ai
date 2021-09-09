@@ -1,0 +1,52 @@
+{
+  "id": "3bb02cd5-43ce-45da-a2af-ab31122b0250",
+  "name": "MyFirstGame-Console-GetContext",
+  "auto": true,
+  "contexts": [
+    "first-game-chosen"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "first-game-chosen",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0621e2cd-0395-4965-9cac-8d38a1c325a2",
+          "required": false,
+          "dataType": "@product",
+          "name": "product",
+          "value": "$product",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Is that were you played #first-game-chosen.first-game on?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

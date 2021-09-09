@@ -1,0 +1,8 @@
+[
+  {
+    "value": "(ms|nintendo|sony)\\d{8}",
+    "synonyms": [
+      "(ms|nintendo|sony)\\d{8}"
+    ]
+  }
+]

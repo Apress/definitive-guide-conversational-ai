@@ -1,0 +1,46 @@
+[
+  {
+    "id": "6d01553c-aae6-432e-ac08-0c6ac1bc3916",
+    "data": [
+      {
+        "text": "How much costs ",
+        "userDefined": false
+      },
+      {
+        "text": "Xbox X",
+        "alias": "platform",
+        "meta": "@platform",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b24fa328-717c-434f-9202-3f01326062fb",
+    "data": [
+      {
+        "text": "What\u0027s the price of a ",
+        "userDefined": false
+      },
+      {
+        "text": "Playstation",
+        "alias": "platform",
+        "meta": "@platform",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "7b3be9b8-c702-4aa6-8299-5dce59a1c968",
+    "data": [
+      {
+        "text": "My best FPS is ",
+        "userDefined": false
+      },
+      {
+        "text": "Fortnite",
+        "alias": "fps_games",
+        "meta": "@fps_games",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d995c887-2b9f-4f94-ad70-21a254bde45a",
+    "data": [
+      {
+        "text": "The best ",
+        "userDefined": false
+      },
+      {
+        "text": "first",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " person shooters I have played are ",
+        "userDefined": false
+      },
+      {
+        "text": "Doom",
+        "alias": "fps_games",
+        "meta": "@fps_games",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "Call of Duty",
+        "alias": "fps_games",
+        "meta": "@fps_games",
+        "userDefined": false
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ac3a51dc-be3b-40d0-b5b9-3aecb08bc038",
+    "data": [
+      {
+        "text": "My favorite FPS games are ",
+        "userDefined": false
+      },
+      {
+        "text": "Call of Duty, Battlefront and PUBG",
+        "alias": "fps_games",
+        "meta": "@fps_games",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

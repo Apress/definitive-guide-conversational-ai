@@ -1,0 +1,50 @@
+[
+  {
+    "id": "f129783d-1440-4448-accd-6845cc3a5e66",
+    "data": [
+      {
+        "text": "Who is the creator of this webchat?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "108dba0e-f9df-4fa7-9b4c-0699100f5ce8",
+    "data": [
+      {
+        "text": "Who created this chatbot?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a2b63255-fc88-4c82-9f6d-47531b26438d",
+    "data": [
+      {
+        "text": "Show me a photo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ab6410c3-885b-44e1-8b16-ff07a52af9bd",
+    "data": [
+      {
+        "text": "Show me an image",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

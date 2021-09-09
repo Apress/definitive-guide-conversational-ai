@@ -1,0 +1,121 @@
+#chatbox { 
+    margin: 20px;
+    min-height: 450px;
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+}
+
+.chatarea{
+    height: 420px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.chatfooter{
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+#chatbox .chatinput {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    height: 20px;
+ 
+}
+#chatbox button { 
+    position: absolute;
+    right: 18%;
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0 0 0 20px;
+    padding: 0; 
+    display: inline-block;
+    left: 0;
+    width: 95%;
+    position: absolute;
+}
+
+#messages li { padding: 5px 10px; }
+
+.balloon {
+    border-radius: .4em;
+    padding: 10px;
+    margin: 15px 0;
+    position: relative;
+    width: 80%;
+}
+
+.balloong a {
+	color: #fff;
+}
+
+.agent { 
+	background: #1659c4;   
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+.agent:after { 
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+    height: 0;
+    border: 10px solid transparent;
+	border-right-color: #1659c4;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -8px;
+}
+
+.user { 
+	background: #b4f4d5;    
+    color: #000;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.user:after { 
+    content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+    height: 0;
+	border: 10px solid transparent;
+	border-left-color: #b4f4d5;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-right: -8px;
+}
+
+button {
+    background-color: #1659c4;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 28px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+    transition: background .4s
+}

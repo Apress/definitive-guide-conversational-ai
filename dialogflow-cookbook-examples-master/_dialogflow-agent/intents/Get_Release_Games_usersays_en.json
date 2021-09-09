@@ -1,0 +1,147 @@
+[
+  {
+    "id": "a7cf8724-39ac-4f26-bea0-fd42898ebc0b",
+    "data": [
+      {
+        "text": "What are ",
+        "userDefined": false
+      },
+      {
+        "text": "the",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " latest releases for ",
+        "userDefined": false
+      },
+      {
+        "text": "Switch",
+        "alias": "platform",
+        "meta": "@platform",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9367d010-bf74-49e2-bdcb-27a2166fadd6",
+    "data": [
+      {
+        "text": "May I get an overview of game releases?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "11736b4b-a8ec-4389-a27e-ec29e3fabd69",
+    "data": [
+      {
+        "text": "Can i get a list new videogames?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8b083967-d099-4dd9-a8d4-76b49d76df4f",
+    "data": [
+      {
+        "text": "What are the latest releases on ",
+        "userDefined": false
+      },
+      {
+        "text": "Xbone",
+        "alias": "platform",
+        "meta": "@platform",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "182f2fe1-b195-4073-bc04-6b1d2e4520b6",
+    "data": [
+      {
+        "text": "What are the latest game releases?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5bfda81d-f074-4a37-b5f4-bbb0c3baa783",
+    "data": [
+      {
+        "text": "Any new game on ",
+        "userDefined": false
+      },
+      {
+        "text": "Playstation 5",
+        "alias": "platform",
+        "meta": "@platform",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d7401f3b-3e43-49e7-9529-26ec12a6ae7d",
+    "data": [
+      {
+        "text": "What\u0027s new on ",
+        "userDefined": false
+      },
+      {
+        "text": "Playstation 4",
+        "alias": "platform",
+        "meta": "@platform",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2f339bd0-f97f-4fce-8351-88e00ce8b7b7",
+    "data": [
+      {
+        "text": "What new games came out?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

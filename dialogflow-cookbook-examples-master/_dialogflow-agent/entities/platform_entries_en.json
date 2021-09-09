@@ -1,0 +1,67 @@
+[
+  {
+    "value": "xbox-series-x",
+    "synonyms": [
+      "xbox-series-x",
+      "Xbox Series X",
+      "newest xbox",
+      "next gen xbox",
+      "Microsoft Xbox Series X"
+    ]
+  },
+  {
+    "value": "playstation-5",
+    "synonyms": [
+      "playstation-5",
+      "PS5",
+      "Next gen playstation",
+      "newest playstation",
+      "Sony Playstation 5"
+    ]
+  },
+  {
+    "value": "xboxone",
+    "synonyms": [
+      "xboxone",
+      "Xbone",
+      "Xbox1",
+      "Microsoft Xbox one"
+    ]
+  },
+  {
+    "value": "ps4--1",
+    "synonyms": [
+      "ps4--1",
+      "Playstation 4",
+      "PS4",
+      "Sony Playstation 4",
+      "Playstation"
+    ]
+  },
+  {
+    "value": "win",
+    "synonyms": [
+      "win",
+      "PC",
+      "Microsoft PC",
+      "Windows"
+    ]
+  },
+  {
+    "value": "switch",
+    "synonyms": [
+      "switch",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "value": "new-nintendo-3ds",
+    "synonyms": [
+      "new-nintendo-3ds",
+      "N3DS",
+      "3DS",
+      "Nintendo 3DS",
+      "New Nintendo 3DS"
+    ]
+  }
+]

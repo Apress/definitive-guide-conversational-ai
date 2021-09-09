@@ -1,0 +1,34 @@
+[
+  {
+    "id": "d19fcf80-de2b-46af-9632-438bdca27c3e",
+    "data": [
+      {
+        "text": "Doom",
+        "alias": "fps-games",
+        "meta": "@fps_games",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "03800859-3aa1-4212-a367-5355acb7f8d6",
+    "data": [
+      {
+        "text": "It\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "Call of Duty",
+        "alias": "fps-games",
+        "meta": "@fps_games",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,122 @@
+#chatbox { 
+    overflow: scroll;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    margin: 20px;
+}
+
+.chatarea{
+    height: 80%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.chatfooter{
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+#chatbox .chatinput {
+    width: 90%;
+    float: left;
+    height: 40px;
+ 
+}
+#chatbox button { 
+    position: absolute;
+    right: 0;
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0 0 0 20px;
+    padding: 0; 
+    display: inline-block;
+    left: 0;
+    width: 95%;
+    position: absolute;
+}
+
+#messages li { padding: 5px 10px; }
+
+.balloon {
+    border-radius: .4em;
+    padding: 10px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.balloong a {
+	color: #fff;
+}
+
+.agent { 
+	background: #1659c4;   
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20%;
+    margin-left: 0px;
+}
+.agent:after { 
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+    height: 0;
+    border: 10px solid transparent;
+	border-right-color: #164dc4;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -8px;
+}
+
+.user { 
+    background: #fff;
+    border: 1px solid #000;    
+    color: #000;
+    margin-right: 0px;
+    margin-left: 20%;
+}
+/*
+.user:after { 
+    content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+    height: 0;
+	border: 10px solid transparent;
+	border-left-color: #fff;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-right: -8px;
+}*/
+
+button {
+    background-color: #1659c4;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 28px;
+    padding: 8px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+    transition: background .4s
+}

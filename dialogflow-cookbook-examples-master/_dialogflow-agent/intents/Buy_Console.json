@@ -1,0 +1,150 @@
+{
+  "id": "79a532d7-d0be-4a9b-82e5-f70c3920b411",
+  "name": "Buy_Console",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5229ea29-4630-498f-991e-294d5ebfc795",
+          "required": true,
+          "dataType": "@product",
+          "name": "product",
+          "value": "$product",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which video game console are you interested in?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 4,
+          "platform": "hangouts",
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "hangouts": {
+              "header": {
+                "title": "Ordering a console",
+                "imageUrl": "https://lh3.googleusercontent.com/v8c6Jn1Aa7s6YO-5Qy6hM4yQ5K4onxgjYD0fzxpOKA7m1Z_0rqOJcXuncd17_W7CeqOcL6d6RfTAAUr1OuHl8uk\u003drw",
+                "subtitle": "Some Video Games Store"
+              },
+              "sections": [
+                {
+                  "widgets": [
+                    {
+                      "keyValue": {
+                        "content": "12345",
+                        "topLabel": "Order No.",
+                        "icon": "TRAIN"
+                      }
+                    },
+                    {
+                      "keyValue": {
+                        "topLabel": "Status",
+                        "content": "In Delivery"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "widgets": [
+                    {
+                      "image": {
+                        "imageUrl": "https://dummyimage.com/600x400/000/fff"
+                      }
+                    }
+                  ],
+                  "header": "Location"
+                },
+                {
+                  "header": "Buttons - i could leave the header out",
+                  "widgets": [
+                    {
+                      "buttons": [
+                        {
+                          "textButton": {
+                            "text": "OPEN ORDER",
+                            "onClick": {
+                              "openLink": {
+                                "url": "https://example.com/orders/..."
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "list",
+                  "subtitle": "Black Edition",
+                  "event": {
+                    "languageCode": "",
+                    "parameters": {},
+                    "name": ""
+                  },
+                  "title": "PS4 Pro"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "PS4",
+                  "event": {
+                    "name": "",
+                    "parameters": {},
+                    "languageCode": ""
+                  },
+                  "subtitle": "White Edition",
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

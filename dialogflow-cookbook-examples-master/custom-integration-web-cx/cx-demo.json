@@ -1,0 +1,2059 @@
+{
+  "agent": {
+    "name": "projects/leeboonstra-dialogflow-cx/locations/global/agents/42454e71-74b0-43e7-8924-2c244f4e33bf",
+    "displayName": "leeboonstra-cx-test",
+    "defaultLanguageCode": "en",
+    "timeZone": "Europe/Madrid",
+    "projectNumber": 859480290327,
+    "speechToTextSettings": {
+      "enableSpeechAdaptation": true
+    },
+    "startFlow": "projects/leeboonstra-dialogflow-cx/locations/global/agents/42454e71-74b0-43e7-8924-2c244f4e33bf/flows/00000000-0000-0000-0000-000000000000",
+    "enableStackdriverLogging": true,
+    "ivrSettings": {
+      "enableIvr": true,
+      "speechSettings": {
+        "endpointerSensitivity": 50,
+        "noSpeechTimeout": {
+          "seconds": 5
+        }
+      },
+      "audioExportGcs": {
+      
+      }
+    }
+  },
+  "flows": [ {
+    "flow": {
+      "flowId": "00000000-0000-0000-0000-000000000000",
+      "displayName": "Default Start Flow",
+      "description": "A start flow created along with the agent",
+      "transitionEvents": [ {
+        "triggerIntentId": "00000000-0000-0000-0000-000000000000",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Hi I am Google's conversational AI advisor. I can explain about the different Conversational tools we have at Google Cloud. "
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "d09f2dda-4882-47f3-9e61-2be40607f506"
+        },
+        "name": "58b7a864-3ff5-4f1c-aae1-b3da7750c8ac"
+      } ],
+      "modelIdentifier": {
+        "modelId": "6f985b0a-aad4-43db-a3b5-52f6f2dca8f8"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "a1f617cb-4921-48da-8298-0534c07dab10"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "a34abad8-01dd-4cf4-a735-40d379f1ab67"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD"
+      }
+    },
+    "pages": [ {
+      "key": "15e88e89-47e5-421d-9223-2d5ed6ff9740",
+      "value": {
+        "displayName": "DF CX Short Info Page"
+      }
+    }, {
+      "key": "32f5109b-bd1c-4744-9047-9958ff3e006f",
+      "value": {
+        "displayName": "CAB Short Info Page"
+      }
+    }, {
+      "key": "7942c4b0-583b-4d72-b5f3-77855014cba2",
+      "value": {
+        "displayName": "DFE Short Info Page"
+      }
+    }, {
+      "key": "bbf7a3a5-1723-4de9-afc7-8cd0380fced6",
+      "value": {
+        "displayName": "Questions",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "No problem. You can ask me questions about Dialogflow CX, Dialogflow Essentials or Conversational Actions Builder. What would you like to know?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "e7ac6b65-d79b-466b-8778-1eb4e7a3a974",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "TODO: Branche on entities."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          },
+          "name": "ff8bc6e7-fbe9-41d7-956a-13496fd51c1b"
+        } ]
+      }
+    }, {
+      "key": "d09f2dda-4882-47f3-9e61-2be40607f506",
+      "value": {
+        "displayName": "How Can I Help",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "You can ask me which conversational tool you should use and I can give you answers on the various tools? What would you like to know?"
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "interactiveVoiceResponseSettings": {
+                
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "7b5dfde8-02e6-4968-a95a-718f35799d05",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetFlowId": "2aaf77d1-d1f3-4687-ab0c-075d3a5222b0"
+          },
+          "name": "905a57b1-7bc5-46ff-8180-30a8d0b221fc"
+        }, {
+          "triggerIntentId": "9affd1db-28cd-4b2a-a8ea-ebc8670d611f",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I can give you guidance on which which tool to use. Shall we start with the first question?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetFlowId": "a7f7c381-2d18-48ef-a931-8c91e2025b6e"
+          },
+          "name": "107627e6-045b-4057-9532-a78af3ffe056"
+        } ]
+      }
+    } ]
+  }, {
+    "flow": {
+      "flowId": "2aaf77d1-d1f3-4687-ab0c-075d3a5222b0",
+      "displayName": "Talk to Google!",
+      "modelIdentifier": {
+        "modelId": "f509d84f-4e26-4f4e-93cc-1d7237916bd1"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "8b44ea54-f7bc-4e68-8c58-ae279d4158be"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "95357650-aa7b-4794-bd86-5798d1dc8100"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD",
+        "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+      },
+      "ivrSettings": {
+      
+      }
+    }
+  }, {
+    "flow": {
+      "flowId": "a7f7c381-2d18-48ef-a931-8c91e2025b6e",
+      "displayName": "Conversational Tool Picker",
+      "transitionEvents": [ {
+        "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Are you building for cross channel agents?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "a0223714-080f-439c-8bcd-f2e8fa46362b"
+        },
+        "name": "f8469ab3-48f7-4ab1-950d-afd6d9f01934"
+      } ],
+      "modelIdentifier": {
+        "modelId": "6b9a5d6a-7ed9-41ef-9c15-686e4eabc04e"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "37716a27-7c67-4037-a455-9dc866b0b2fd"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "7bdfff84-87ef-4243-ac4c-09c50adafbda"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD",
+        "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+      },
+      "ivrSettings": {
+        "enableIvr": true
+      }
+    },
+    "pages": [ {
+      "key": "0461b853-a18c-4026-bf4a-c491cfc8208f",
+      "value": {
+        "displayName": "Visual Builder",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Do you want a visual representation of your dialogue in a graph?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85"
+          },
+          "name": "e21825df-842a-4f9e-95eb-37497a18bd78"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "062191b4-7b82-4f8b-9480-9abfac9e8853"
+          },
+          "name": "bd8cbca3-1030-44da-b218-114be2ea815c"
+        } ]
+      }
+    }, {
+      "key": "062191b4-7b82-4f8b-9480-9abfac9e8853",
+      "value": {
+        "displayName": "END ES",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "The product that you will need is called Dialogflow Essentials. "
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "interactiveVoiceResponseSettings": {
+                
+                }
+              } ]
+            } ]
+          },
+          "setParameterActions": [ {
+            "parameter": "product",
+            "value": "es"
+          } ]
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetFlowId": "ff7295ba-a588-4dfa-aefc-6fb9e144f073"
+          },
+          "name": "3aaa45a7-65c0-4a2a-82fd-0bb8cfd3d018"
+        } ]
+      }
+    }, {
+      "key": "4b7d6b3e-0706-466d-b092-302c0edcaa8e",
+      "value": {
+        "displayName": "Is IVR?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Are you building a conversation for contact centers?"
+                  }, {
+                    "text": "Are you building a conversation for an IVR?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85"
+          },
+          "name": "0422af8e-e7fe-4e87-9fd8-b7814a43a6d3"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "8e4bdb6f-ceb1-4ef3-9d91-351860e91743"
+          },
+          "name": "f5876310-99a3-4927-8dfa-6b69d515018a"
+        } ]
+      }
+    }, {
+      "key": "4b925cb7-963f-4eed-b0ec-cd1cce478762",
+      "value": {
+        "displayName": "Hobbyist?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Are you an individual, hobbyist, freelancer or small business?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "559133a1-52a3-42a7-883e-18fc7fd82e23"
+          },
+          "name": "019de862-1a7a-4032-9e22-c750afe91fdc"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "f519dcc6-9a81-44a7-aa0d-917cfeea52cd"
+          },
+          "name": "f63c05f8-7dbc-4001-b8d7-ddc73dcd42c2"
+        } ]
+      }
+    }, {
+      "key": "51985944-c5f7-43b2-b589-993e5a30834a",
+      "value": {
+        "displayName": "Premium?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Are you a enterprise / premium user?"
+                  }, {
+                    "text": "Do you consider yourself an enterprise user, and do you expect a premium experience?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85"
+          },
+          "name": "639ef28c-abb7-49b9-b333-4073d72dee64"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "062191b4-7b82-4f8b-9480-9abfac9e8853"
+          },
+          "name": "c649b263-447e-4a19-8cd4-56336c78580b"
+        } ]
+      }
+    }, {
+      "key": "559133a1-52a3-42a7-883e-18fc7fd82e23",
+      "value": {
+        "displayName": "END CB",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "The product that you will need is called Conversational Actions Builder. This is not a Google Cloud product, but a Actions on Google consumer product."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "END_SESSION"
+          },
+          "name": "548d7796-0a08-47e1-924f-d5c92428c6f7"
+        } ]
+      }
+    }, {
+      "key": "8bf4f854-099c-4550-84f9-c3d4aa41183f",
+      "value": {
+        "displayName": "Large agent?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Are you building a large agent? More than hundreds of questions/intents?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85"
+          },
+          "name": "ac3837db-496e-40a0-9cf5-85bfc5f10e81"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "0461b853-a18c-4026-bf4a-c491cfc8208f"
+          },
+          "name": "cbb37bf4-df86-469b-9beb-a04faadaff2d"
+        } ]
+      }
+    }, {
+      "key": "8e4bdb6f-ceb1-4ef3-9d91-351860e91743",
+      "value": {
+        "displayName": "Turn taking?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Does your conversation takes more than 3 turn taking turns?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85"
+          },
+          "name": "c781140b-9908-4d31-8610-49c759e45bbf"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "8bf4f854-099c-4550-84f9-c3d4aa41183f"
+          },
+          "name": "d3693cd1-3c34-4875-ba87-ac9804fbcc4e"
+        } ]
+      }
+    }, {
+      "key": "a0223714-080f-439c-8bcd-f2e8fa46362b",
+      "value": {
+        "displayName": "Cross Channel Agent",
+        "onLoad": {
+        
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "b6d4ca77-ea39-4d5e-9718-43b073f35334"
+          },
+          "name": "41e81a0c-3c25-496c-b79c-ebdc9e2f4063"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "da38a9a8-0fda-4a92-b738-34e7a31eb153"
+          },
+          "name": "4d804d5f-d1e0-4c7c-a41a-9a993e545b40"
+        } ]
+      }
+    }, {
+      "key": "b6d4ca77-ea39-4d5e-9718-43b073f35334",
+      "value": {
+        "displayName": "One IVR?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Is one of your channels an IVR?"
+                  }, {
+                    "text": "Are you supporting contact centers?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85"
+          },
+          "name": "de7a21b9-2eb0-4630-a147-852b040d7b81"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "51985944-c5f7-43b2-b589-993e5a30834a"
+          },
+          "name": "e3dcd5e0-9ab8-4d21-93a4-996f29df0c7d"
+        } ]
+      }
+    }, {
+      "key": "d0e6d8d4-cdf8-46fc-9ccb-f6f8c5466e85",
+      "value": {
+        "displayName": "END CX",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "The product that you will need is called Dialogflow CX."
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "interactiveVoiceResponseSettings": {
+                
+                }
+              } ]
+            } ]
+          },
+          "setParameterActions": [ {
+            "parameter": "product",
+            "value": "cx"
+          } ]
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetFlowId": "ff7295ba-a588-4dfa-aefc-6fb9e144f073"
+          },
+          "name": "ea071ef0-ce40-4fa6-a810-ff63b4e4031f"
+        } ]
+      }
+    }, {
+      "key": "da38a9a8-0fda-4a92-b738-34e7a31eb153",
+      "value": {
+        "displayName": "Google Assistant?",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Are you building for the Google Assistant?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "4b925cb7-963f-4eed-b0ec-cd1cce478762"
+          },
+          "name": "a193c500-32c8-4ebb-8c44-507d2b13b0ef"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "4b7d6b3e-0706-466d-b092-302c0edcaa8e"
+          },
+          "name": "faf3bf8c-3304-4a1e-bf9e-620ee9043896"
+        } ]
+      }
+    }, {
+      "key": "f519dcc6-9a81-44a7-aa0d-917cfeea52cd",
+      "value": {
+        "displayName": "Enterprise features",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Does an SLA, support, compliance and enterprise features matter to you? "
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "062191b4-7b82-4f8b-9480-9abfac9e8853"
+          },
+          "name": "43fbd0b9-398c-44e8-a0fa-0df102bbaaba"
+        }, {
+          "triggerIntentId": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "559133a1-52a3-42a7-883e-18fc7fd82e23"
+          },
+          "name": "4880178b-48a2-450c-bd11-fa8097763faf"
+        } ]
+      }
+    } ]
+  }, {
+    "flow": {
+      "flowId": "ff7295ba-a588-4dfa-aefc-6fb9e144f073",
+      "displayName": "Request Info",
+      "transitionEvents": [ {
+        "condition": {
+          "disjunction": {
+            "expressions": [ {
+              "restriction": {
+                "comparator": "EQUALS",
+                "lhs": {
+                  "member": {
+                    "expressions": [ {
+                      "value": "$session"
+                    }, {
+                      "value": "params"
+                    }, {
+                      "value": "product"
+                    } ]
+                  }
+                },
+                "rhs": {
+                  "phrase": {
+                    "values": [ "es" ]
+                  }
+                }
+              }
+            }, {
+              "restriction": {
+                "comparator": "EQUALS",
+                "lhs": {
+                  "member": {
+                    "expressions": [ {
+                      "value": "$session"
+                    }, {
+                      "value": "params"
+                    }, {
+                      "value": "product"
+                    } ]
+                  }
+                },
+                "rhs": {
+                  "phrase": {
+                    "values": [ "cx" ]
+                  }
+                }
+              }
+            } ]
+          }
+        },
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "e0a344cf-febc-4fc5-b3fd-7d8bf95e3068"
+        },
+        "name": "a2144b0f-e9b1-445b-adef-002514479548"
+      } ],
+      "modelIdentifier": {
+        "modelId": "94237744-781a-4219-8465-4d2097fd3038"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "1b115013-8f41-4749-a1d9-5c0913806fcb"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "38084e21-94e3-40fc-96b2-f408f7d5789d"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD",
+        "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+      },
+      "ivrSettings": {
+      
+      }
+    },
+    "pages": [ {
+      "key": "88536791-01d8-4380-b2d1-da2e81cd602e",
+      "value": {
+        "displayName": "Confirmation",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "A Google sales representative will contact you about $session.params.product on $session.params.email."
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "interactiveVoiceResponseSettings": {
+                
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+              
+              }
+            },
+            "targetPageId": "END_SESSION"
+          },
+          "name": "9b5cf7c1-e65e-4aaf-a703-0a3cfb08b8b5"
+        } ]
+      }
+    }, {
+      "key": "e0a344cf-febc-4fc5-b3fd-7d8bf95e3068",
+      "value": {
+        "displayName": "P: Request Info",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "interactiveVoiceResponseSettings": {
+                
+                }
+              } ]
+            } ]
+          }
+        },
+        "slots": [ {
+          "displayName": "email",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.email",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "What's your email address?"
+                      }, {
+                        "text": "Can you enter your email address so Google can contact you?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "88536791-01d8-4380-b2d1-da2e81cd602e"
+          },
+          "name": "09148220-1c2c-407e-9cf2-aa30dc594821"
+        } ]
+      }
+    } ]
+  } ],
+  "intents": [ {
+    "meta": {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "displayName": "Default Welcome Intent",
+      "priority": 500000
+    },
+    "trainingPhrases": [ {
+      "id": "242e35bd-0347-44c2-8c05-c59ac64c2bfd",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "just going to say hi"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "0978005b-9a25-4daa-a881-09f9e455dbe6",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "heya"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "cf553dae-152b-467d-8470-aa35f9aa56c8",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hello hi"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "3228eb7f-dec6-4c6c-ab5c-125dd3046eaa",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "howdy"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "91c4c3d8-57a0-4ca3-b32f-42b00d89f58a",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hey there"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "b4c5edb8-4e0e-4e5a-b56a-2677cf6225a1",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hi there"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "87001127-d326-4bb8-a248-03ae423b2c60",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "greetings"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "2bf182b4-2083-455d-83fe-2be6958d4b01",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hey"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "87cd15ff-4a0d-40c0-bcfb-20350163cc0b",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "long time no see"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "90b843a4-25c4-482b-be26-deaa369bd55a",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hello"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "0aad66c2-58bc-461d-a08c-3362edb726bb",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "lovely day isn't it"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "f1e9df51-0024-4dcf-99d4-19dbd44598ec",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I greet you"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "b99e8a48-3150-415e-92de-3f481271a77c",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hello again"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "62c1587a-c474-41ef-a720-b57feacce856",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hi"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "4563c5bc-31d9-4662-be02-e20d2ac7be2a",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "hello there"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "id": "98df6e58-5a5b-47be-830c-026052a56b8d",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "a good day"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  }, {
+    "meta": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "displayName": "Default Negative Intent",
+      "priority": 500000,
+      "isFallback": true
+    }
+  }, {
+    "meta": {
+      "id": "42eb6ac4-6f6d-45b3-8515-c8c3d5f07cbb",
+      "displayName": "Get Email Address",
+      "priority": 500000,
+      "parameters": [ {
+        "id": "email",
+        "displayName": "email",
+        "value": "$email",
+        "entityTypeDisplayName": "@sys.email"
+      } ]
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "The email is: ",
+        "userDefined": true
+      }, {
+        "text": "l.boonstra@gmail.com",
+        "entityType": "@sys.email",
+        "alias": "email",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "It is "
+      }, {
+        "text": "lee@lee. nl",
+        "entityType": "@sys.email",
+        "alias": "email"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "My email address is "
+      }, {
+        "text": "leeboonstra@google.com",
+        "entityType": "@sys.email",
+        "alias": "email"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "lee@leeboonstra.com",
+        "entityType": "@sys.email",
+        "alias": "email"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  }, {
+    "meta": {
+      "id": "65fe3c07-79e0-4bad-ae64-ed42aece9ade",
+      "displayName": "Yes-Answer",
+      "priority": 500000
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Yah"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "confirm"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "that is true"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "that's correct"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "it is"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Not now, but in the future"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I will"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I guess"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "yeah"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Yep"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Correct"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "yes"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  }, {
+    "meta": {
+      "id": "7b5dfde8-02e6-4968-a95a-718f35799d05",
+      "displayName": "Speak to someone",
+      "priority": 500000
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Let me talk to a real person"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I want to talk to an agent"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Bring me in contact with a live agent"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Escalate!"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Connect me to a human"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Can I speak with a Googler"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I would like to speak to someone"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  }, {
+    "meta": {
+      "id": "84caaa8d-0ae3-41ff-828e-3b885f4bc262",
+      "displayName": "No-Answer",
+      "priority": 500000
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Not"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "It's not"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "We are not planning to"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "No way"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Not gonna happen"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I don't"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Nope"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Neh"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Not really"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Not for now"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "No"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  }, {
+    "meta": {
+      "id": "9affd1db-28cd-4b2a-a8ea-ebc8670d611f",
+      "displayName": "Start-Conversational-Tool",
+      "priority": 500000,
+      "parameters": [ {
+        "id": "product",
+        "displayName": "product",
+        "value": "$product",
+        "entityTypeDisplayName": "@Product"
+      }, {
+        "id": "product1",
+        "displayName": "product1",
+        "value": "$product1",
+        "entityTypeDisplayName": "@Product"
+      } ]
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Help me making a choice"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "When to use what tool"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "When should I use "
+      }, {
+        "text": "Dialogflow CX",
+        "entityType": "@Product",
+        "alias": "product"
+      }, {
+        "text": "?"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Do I need to change?"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "We are using "
+      }, {
+        "text": "Dialogflow Essentials",
+        "entityType": "@Product",
+        "alias": "product"
+      }, {
+        "text": " should I upgrade?"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Which conversational suite to use?"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Which botbuilder?"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "There are too many Google bot builders, which do I need"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Can you tell me which tool I need"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Conversational Picker"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Start the picker"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Start"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Do I need "
+      }, {
+        "text": "Dialogflow CX",
+        "entityType": "@Product",
+        "alias": "product"
+      }, {
+        "text": " vs "
+      }, {
+        "text": "Dialogflow Essentials",
+        "entityType": "@Product",
+        "alias": "product1"
+      }, {
+        "text": "?"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Which tool should I use"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "which conversational tool should I use"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Conversational Tool picker"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I would like to start the conversational tool picker"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  }, {
+    "meta": {
+      "id": "e7ac6b65-d79b-466b-8778-1eb4e7a3a974",
+      "displayName": "Get Product Info",
+      "priority": 500000,
+      "parameters": [ {
+        "id": "Product",
+        "displayName": "Product",
+        "value": "$Product",
+        "entityTypeDisplayName": "@Product"
+      } ]
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "CX",
+        "entityType": "@Product",
+        "alias": "Product",
+        "userDefined": true
+      }, {
+        "text": "?",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I need more information on ",
+        "userDefined": true
+      }, {
+        "text": "Conversational Builder",
+        "entityType": "@Product",
+        "alias": "Product",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "What is ",
+        "userDefined": true
+      }, {
+        "text": "Dialogflow Essentials",
+        "entityType": "@Product",
+        "alias": "Product",
+        "userDefined": true
+      }, {
+        "text": "?",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Can you tell me more about ",
+        "userDefined": true
+      }, {
+        "text": "Dialogflow Customer Experience",
+        "entityType": "@Product",
+        "alias": "Product",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "I would like to hear more about ",
+        "userDefined": true
+      }, {
+        "text": "DF ES",
+        "entityType": "@Product",
+        "alias": "Product",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "Tell me more about ",
+        "userDefined": true
+      }, {
+        "text": "Dialogflow CX",
+        "entityType": "@Product",
+        "alias": "Product",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "en"
+    } ]
+  } ],
+  "entities": [ {
+    "id": "aedbabe6-6444-4ded-a238-34e4132f2fa7",
+    "displayName": "Product",
+    "kind": "KIND_MAP",
+    "entries": [ {
+      "value": "Dialogflow CX",
+      "synonyms": [ "Dialogflow CX", "DF CX", "CX", "Dialogflow Customer Experience" ],
+      "lang": "en"
+    }, {
+      "value": "Dialogflow Essentials",
+      "synonyms": [ "Dialogflow Essentials", "Essentials", "DF ES", "Dialogflow Enterprise", "Dialogflow Free", "Dialogflow" ],
+      "lang": "en"
+    }, {
+      "value": "Conversational Builder",
+      "synonyms": [ "Conversational Builder", "Conversational Actions Builder", "Actions on Google", "Actions on Google Builder" ],
+      "lang": "en"
+    } ],
+    "nluSettings": {
+    
+    }
+  } ],
+  "isAgentSnapshot": true
+}

@@ -1,0 +1,105 @@
+{
+  "_from": "git://github.com/googleapis/nodejs-dialogflow.git#v3beta1",
+  "_id": "@google-cloud/dialogflow@3.2.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@google-cloud/dialogflow",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git://github.com/googleapis/nodejs-dialogflow.git#v3beta1",
+    "rawSpec": "git://github.com/googleapis/nodejs-dialogflow.git#v3beta1",
+    "saveSpec": "git://github.com/googleapis/nodejs-dialogflow.git#v3beta1",
+    "fetchSpec": "git://github.com/googleapis/nodejs-dialogflow.git",
+    "gitCommittish": "v3beta1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git://github.com/googleapis/nodejs-dialogflow.git#0381be5f408f97c0a2303866eeef79dc34456d9b",
+  "_spec": "git://github.com/googleapis/nodejs-dialogflow.git#v3beta1",
+  "_where": "/Users/leeappello/Documents/projects/cookbook-examples/custom-integration-web-cx/back-end",
+  "author": {
+    "name": "Google LLC"
+  },
+  "bugs": {
+    "url": "https://github.com/googleapis/nodejs-dialogflow/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "google-gax": "^2.4.1",
+    "protobufjs": "^6.8.9"
+  },
+  "deprecated": false,
+  "description": "Dialogflow API client for Node.js",
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.8.10",
+    "@microsoft/api-extractor": "^7.8.10",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^13.11.1",
+    "@types/sinon": "^9.0.0",
+    "c8": "^7.1.0",
+    "codecov": "^3.6.5",
+    "gts": "^2.0.0",
+    "jsdoc": "^3.6.4",
+    "jsdoc-fresh": "^1.0.2",
+    "jsdoc-region-tag": "^1.0.4",
+    "linkinator": "^2.0.6",
+    "mocha": "^8.0.0",
+    "null-loader": "^4.0.0",
+    "pack-n-play": "^1.0.0-2",
+    "sinon": "^9.0.2",
+    "ts-loader": "^8.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "build/protos",
+    "build/src"
+  ],
+  "homepage": "https://github.com/googleapis/nodejs-dialogflow#readme",
+  "keywords": [
+    "google apis client",
+    "google api client",
+    "google apis",
+    "google api",
+    "google",
+    "google cloud platform",
+    "google cloud",
+    "cloud",
+    "google dialogflow",
+    "dialogflow",
+    "Dialogflow API"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/src/index.js",
+  "name": "@google-cloud/dialogflow",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googleapis/nodejs-dialogflow.git"
+  },
+  "scripts": {
+    "api-documenter": "api-documenter yaml --input-folder=temp",
+    "api-extractor": "api-extractor run --local",
+    "clean": "gts clean",
+    "compile": "tsc -p . && cp -r protos build/",
+    "compile-protos": "compileProtos src",
+    "docs": "jsdoc -c .jsdoc.js",
+    "docs-test": "linkinator docs",
+    "fix": "gts fix",
+    "lint": "gts check",
+    "precompile": "gts clean",
+    "predocs-test": "npm run docs",
+    "prelint": "cd samples; npm link ../; npm install",
+    "prepare": "npm run compile-protos && npm run compile",
+    "samples-test": "cd samples/ && npm link ../ && npm install && npm test && cd ../",
+    "system-test": "mocha build/system-test",
+    "test": "c8 mocha build/test/*_v2.js && c8 mocha build/test/*_v2beta1.js"
+  },
+  "version": "3.2.0"
+}

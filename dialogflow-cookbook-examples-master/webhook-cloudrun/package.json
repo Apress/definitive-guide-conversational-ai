@@ -1,0 +1,23 @@
+{
+  "name": "dialogflow-fulfillment",
+  "description": "This is the default fulfillment for a Dialogflow agents using Cloud Run",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Lee Boonstra",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "gcloud builds submit --tag gcr.io/dialogflowcookbook/dialogflow",
+    "deploy": "gcloud run deploy --image gcr.io/dialogflowcookbook/dialogflow --platform managed"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.5.0",
+    "body-parser": "^1.19.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "WELCOME_BASIC": "Hoi, ik ben de virtual video game chat agent. Ik kan over video games praten en ik kan je vertellen welke games net uit zijn. Wat wil je weten?",
+    "DELIVERY_DATE": "De datum is %s.",
+    "PRICE": "Het kost %s.",
+    "TOTAL_AMOUNT": "Het totaal is: %s.",
+    "FALLBACK": "Oeps, er ging iets mis. Kun je het opnieuw proberen?"
+ }

@@ -1,0 +1,51 @@
+{
+  "id": "188fe06c-e630-494a-8fff-961d0d73866e",
+  "name": "Get_Release_Games",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "platform",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1bd5cae0-5677-48f7-87a8-76e445105d40",
+          "required": true,
+          "dataType": "@platform",
+          "name": "platform",
+          "value": "$platform",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "For which platform?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
